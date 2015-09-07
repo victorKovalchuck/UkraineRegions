@@ -16,7 +16,7 @@ describe("AngularControllerTest", function () {
             var contr = $controller("RegionObject", { '$scope': $scope, '$location': $location, 'Region': mockRegionResource });
         });
     });
-    it("$scope.regions from RegionObject controller shoud equal mockShipResource")
+    it("shoud test controller--(RegionObject)")
     {
         expect($scope.regions).toBe(mockRegionResource);
     }
@@ -24,7 +24,7 @@ describe("AngularControllerTest", function () {
 
 
     describe("ResourceTest", function () {
-        it("shoud get Resource by Id and Method name", function () {
+        it("shoud test Resource --(Region)", function () {
             var $scope = {};
             var $location = {};
             var Ship = {};
@@ -52,7 +52,7 @@ describe("AngularControllerTest", function () {
         }));
 
 
-        it("Spy on RegionObject function", function () {
+        it("shoud test factory--(RegionsList)", function () {
             httpBackend.expectGET('/Home/RetriveRegionsData')
                 .respond([{
                     ID: 1
