@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UkraineRegions", "UkraineRegions\UkraineRegions.csproj", "{54FCB887-065C-47F3-8BC7-3F64B278B9FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UkraineRegions.Tests", "UkraineRegions.Tests\UkraineRegions.Tests.csproj", "{A5B716B7-03C9-4C55-878E-B6DE966D3559}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQtoCSV", "LINQtoCSV\LINQtoCSV.csproj", "{07058BF9-6F86-40FF-AE33-2A4F89B5758A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{54FCB887-065C-47F3-8BC7-3F64B278B9FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54FCB887-065C-47F3-8BC7-3F64B278B9FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54FCB887-065C-47F3-8BC7-3F64B278B9FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54FCB887-065C-47F3-8BC7-3F64B278B9FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5B716B7-03C9-4C55-878E-B6DE966D3559}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5B716B7-03C9-4C55-878E-B6DE966D3559}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5B716B7-03C9-4C55-878E-B6DE966D3559}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5B716B7-03C9-4C55-878E-B6DE966D3559}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07058BF9-6F86-40FF-AE33-2A4F89B5758A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07058BF9-6F86-40FF-AE33-2A4F89B5758A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07058BF9-6F86-40FF-AE33-2A4F89B5758A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07058BF9-6F86-40FF-AE33-2A4F89B5758A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

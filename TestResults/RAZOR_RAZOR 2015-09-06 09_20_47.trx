@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="9c33037d-cb41-4532-ae02-4897b6701cf9" name="RAZOR@RAZOR 2015-09-06 09:20:47" runUser="RAZOR\RAZOR" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="9f6123bc-77ea-4e2c-a007-ad84c2de3562">
+    <Deployment runDeploymentRoot="RAZOR_RAZOR 2015-09-06 09_20_47">
+      <DeploymentItem filename="C:\Users\RAZOR\Desktop\dowloadedUkrReg\packages\Microsoft.AspNet.Razor.2.0.20710.0\lib\net40\System.Web.Razor.dll" />
+      <DeploymentItem filename="C:\Users\RAZOR\Desktop\dowloadedUkrReg\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.dll" />
+      <DeploymentItem filename="C:\Users\RAZOR\Desktop\dowloadedUkrReg\UkraineRegions\bin\UkraineRegions.dll" />
+      <DeploymentItem filename="C:\Users\RAZOR\Desktop\dowloadedUkrReg\packages\Microsoft.Net.Http.2.0.20710.0\lib\net40\System.Net.Http.dll" />
+      <DeploymentItem filename="C:\Users\RAZOR\Desktop\dowloadedUkrReg\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.Helpers.dll" />
+      <DeploymentItem filename="D:\Projects\Training\Trn89\mvc4\packages\Moq.4.2.1507.0118\lib\net40\Moq.dll" />
+      <DeploymentItem filename="C:\Users\RAZOR\Desktop\dowloadedUkrReg\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Deployment.dll" />
+      <DeploymentItem filename="C:\Users\RAZOR\Desktop\dowloadedUkrReg\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Razor.dll" />
+      <DeploymentItem filename="C:\Users\RAZOR\Desktop\dowloadedUkrReg\packages\Newtonsoft.Json.4.5.6\lib\net40\Newtonsoft.Json.dll" />
+      <DeploymentItem filename="C:\Users\RAZOR\Desktop\dowloadedUkrReg\packages\Microsoft.AspNet.Mvc.4.0.20710.0\lib\net40\System.Web.Mvc.dll" />
+      <DeploymentItem filename="C:\Users\RAZOR\Desktop\dowloadedUkrReg\LINQtoCSV\bin\Debug\LINQtoCSV.dll" />
+      <DeploymentItem filename="C:\Users\RAZOR\Desktop\dowloadedUkrReg\packages\Microsoft.Net.Http.2.0.20710.0\lib\net40\System.Net.Http.WebRequest.dll" />
+      <DeploymentItem filename="C:\Users\RAZOR\Desktop\dowloadedUkrReg\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2015-09-06T09:20:47.4554812+03:00" queuing="2015-09-06T09:20:47.7244965+03:00" start="2015-09-06T09:20:47.7464978+03:00" finish="2015-09-06T09:20:48.1595214+03:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="PathHelperTest" storage="c:\users\razor\desktop\dowloadedukrreg\ukraineregions.tests\bin\debug\ukraineregions.tests.dll" id="e1024174-8257-f691-a675-7e5ba9adea38">
+      <Execution id="81742680-2cbf-4cd2-87c8-f928d75082a8" />
+      <TestMethod codeBase="C:/Users/RAZOR/Desktop/dowloadedUkrReg/UkraineRegions.Tests/bin/Debug/UkraineRegions.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UkraineRegions.Tests.HomeControllerTest, UkraineRegions.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="PathHelperTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="e1024174-8257-f691-a675-7e5ba9adea38" executionId="81742680-2cbf-4cd2-87c8-f928d75082a8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="81742680-2cbf-4cd2-87c8-f928d75082a8" testId="e1024174-8257-f691-a675-7e5ba9adea38" testName="PathHelperTest" computerName="RAZOR" duration="00:00:00.0909018" startTime="2015-09-06T09:20:47.7534982+03:00" endTime="2015-09-06T09:20:48.1355201+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="81742680-2cbf-4cd2-87c8-f928d75082a8">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method UkraineRegions.Tests.HomeControllerTest.PathHelperTest threw exception: 
+System.ArgumentNullException: Value cannot be null.
+Parameter name: path</Message>
+          <StackTrace>    at System.IO.Path.CheckInvalidPathChars(String path, Boolean checkAdditional)
+   at System.Security.Permissions.FileIOPermission.CheckIllegalCharacters(String[] str)
+   at System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, AccessControlActions control, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   at System.Security.Permissions.FileIOPermission..ctor(FileIOPermissionAccess access, String path)
+   at System.Web.InternalSecurityPermissions.get_AppPathDiscovery()
+   at System.Web.HttpRuntime.get_AppDomainAppPath()
+   at UkraineRegions.PathHelper.HttpRuntimeWrapper.get_AppDomainAppVirtualPath() in C:\Users\RAZOR\Desktop\dowloadedUkrReg\UkraineRegions\PathHelper\StaticContentMockHelpet.cs:line 14
+   at UkraineRegions.PathHelper.DataPathHelper.GetServerPath() in C:\Users\RAZOR\Desktop\dowloadedUkrReg\UkraineRegions\PathHelper\DataPathHelper.cs:line 26
+   at UkraineRegions.PathHelper.DataPathHelper.GetDataPath(String dataType) in C:\Users\RAZOR\Desktop\dowloadedUkrReg\UkraineRegions\PathHelper\DataPathHelper.cs:line 20
+   at UkraineRegions.Tests.HomeControllerTest.PathHelperTest() in C:\Users\RAZOR\Desktop\dowloadedUkrReg\UkraineRegions.Tests\HomeControllerTest.cs:line 56
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

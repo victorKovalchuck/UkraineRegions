@@ -1,0 +1,26 @@
+﻿
+
+
+<div class="EditRegion">
+    <table>
+        <tr>
+           <td>City:</td>  
+           <td><input ng-model="region.City" ng-value="{{region.City}}" class="input-mini"></td>
+        </tr>
+        <tr>
+           <td> RegionalCenter:</td>
+           <td><input ng-model="region.RegionalCenter" ng-value="{{region.RegionalCenter}}" class="input-small"></td>
+        </tr>
+        <tr>
+           <td>Population:</td> 
+           <td><input ng-model="region.Population" ng-value="{{region.Population}}"></td>
+        </tr>
+         <tr>
+           <td>Production:</td> 
+           <td><input ng-model="region.Production" ng-value="{{region.Production}}"></td>
+        </tr>
+        <tr>
+            <td><button type="button" data-ng-click="Save()">Save</button></td>
+        </tr>
+    </table>   
+</div>

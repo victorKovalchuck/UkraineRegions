@@ -1,0 +1,22 @@
+﻿
+<div class="RegionsListCntr">
+<table class="tableOFRegions">
+<tr style="color:Red">
+      <td> City:</td>
+      <td> RegionalCenter:</td> 
+      <td> Population: </td>
+      <td> Production:</td>
+      <td>Edit</td>
+      <td>Delete</td>
+ </tr>
+<tr ng-repeat="region in regions">
+      <td>{{region.City}}</td>
+      <td>{{region.RegionalCenter}}</td> 
+      <td>{{region.Population}}</td>
+      <td>{{region.Production}}</td>
+      <td><a href="/#/EditRegionID={{region.Id}}">edit</a></td>  
+       <td><a href="/#/DeleteRegionID={{region.Id}}" onclick="return confirm('Are you sure?')">delete</a></td>  
+</tr>
+</table> 
+<button onclick="location.href='#/CreateRegion'">NewRegion</button>
+</div>
