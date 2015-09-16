@@ -1,26 +1,31 @@
-﻿
-
-
-<div class="EditRegion">
+﻿<div class="EditRegion" data-ng-form name="EditRegionForm">
     <table>
         <tr>
            <td>City:</td>  
-           <td><input ng-model="region.City" ng-value="{{region.City}}" class="input-mini"></td>
+           <td><input ng-model="region.City" name="city" ng-value="{{region.City}}" required></td>
+           <td><span ng-show="EditRegionForm.city.$dirty && EditRegionForm.city.$invalid"></td>
+           <td><span style="color:red" ng-show="EditRegionForm.city.$error.required"> required</span></td>  
         </tr>
         <tr>
            <td> RegionalCenter:</td>
-           <td><input ng-model="region.RegionalCenter" ng-value="{{region.RegionalCenter}}" class="input-small"></td>
+           <td><input ng-model="region.RegionalCenter" name="region" ng-value="{{region.RegionalCenter}}" required></td>
+           <td><span ng-show="EditRegionForm.region.$dirty && EditRegionForm.region.$invalid"></td>
+           <td><span style="color:red" ng-show="EditRegionForm.region.$error.required"> required</span></td>  
         </tr>
         <tr>
            <td>Population:</td> 
-           <td><input ng-model="region.Population" ng-value="{{region.Population}}"></td>
+           <td><input ng-model="region.Population" name="population" ng-value="{{region.Population}}" required></td>
+           <td><span ng-show="EditRegionForm.population.$dirty && EditRegionForm.population.$invalid"></td>
+           <td><span style="color:red" ng-show="EditRegionForm.population.$error.required"> required</span></td>
         </tr>
          <tr>
            <td>Production:</td> 
-           <td><input ng-model="region.Production" ng-value="{{region.Production}}"></td>
+           <td><input ng-model="region.Production" name="production" ng-value="{{region.Production}}" required></td>
+           <td><span ng-show="EditRegionForm.production.$dirty && EditRegionForm.production.$invalid"></td>
+           <td><span style="color:red" ng-show="EditRegionForm.production.$error.required"> required</span></td>
         </tr>
         <tr>
-            <td><button type="button" data-ng-click="Save()">Save</button></td>
+            <td><button type="button" data-ng-click="Save()" ng-disabled="!EditRegionForm.$valid">Save</button></td>
         </tr>
     </table>   
 </div>

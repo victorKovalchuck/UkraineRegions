@@ -1,0 +1,10 @@
+﻿.tableOFRegions {
+    border: 2px solid #f2f2f2;
+    width:100%;
+}
+.tableOFRegions tr:nth-child(odd) {
+   background-color: #f2f2f2;
+}
+.tableOFRegions tr:nth-child(even) {
+   background-color: #ffffff;
+}

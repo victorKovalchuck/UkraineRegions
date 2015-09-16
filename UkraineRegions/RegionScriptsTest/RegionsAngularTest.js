@@ -2,9 +2,13 @@
 describe("AngularControllerTest", function () {
     var httpBackend, mockRegionResource, $controller, resource, $scope = {}, Region = {};
 
+
     beforeEach(function () {
         module('RegionsApp');
     });
+    beforeEach(inject(function (_$controller_) {
+        $controller = _$controller_;
+    }));
 
     beforeEach(function () {
         angular.mock.inject(function ($injector) {
@@ -16,11 +20,13 @@ describe("AngularControllerTest", function () {
             var contr = $controller("RegionObject", { '$scope': $scope, '$location': $location, 'Region': mockRegionResource });
         });
     });
-    it("shoud test controller--(RegionObject)")
-    {
-        expect($scope.regions).toBe(mockRegionResource);
-    }
 
+    describe("ResourceTest", function () {
+        it("shoud test controller--(RegionObject)", function () {
+
+            expect($scope.region).toBe(mockRegionResource);
+        })
+    });
 
 
     describe("ResourceTest", function () {
@@ -44,10 +50,10 @@ describe("AngularControllerTest", function () {
 
     describe("FactoryTest", function () {
         var Region = {}, MyRegionObject = {};
-       
+
 
         beforeEach(inject(function ($injector) {
-            MyRegionObject = $injector.get('RegionsList');            
+            MyRegionObject = $injector.get('RegionsList');
             Region = $injector.get('Region');
         }));
 

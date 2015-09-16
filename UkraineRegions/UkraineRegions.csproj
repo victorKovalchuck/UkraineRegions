@@ -120,9 +120,11 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Content Include="css\HomePageItemsLocation.css" />
     <Content Include="css\jasmine.css" />
-    <Content Include="css\TableListStyle.css" />
+    <Content Include="css\TableDecoration.css" />
     <Content Include="Global.asax" />
+    <Content Include="karma.conf.js" />
     <Content Include="RegionScriptsTest\RegionsAngularTest.js" />
     <Content Include="RegionScripts\Controllers.js" />
     <Content Include="RegionScripts\factoryRest.js" />
@@ -958,7 +960,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>2062</DevelopmentServerPort>
+          <DevelopmentServerPort>13549</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>

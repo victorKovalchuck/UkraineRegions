@@ -1,0 +1,11 @@
+﻿header
+{
+    font-size:22px;
+    text-align:center;
+}
+footer
+{
+    position:absolute;
+    bottom:10px;    
+    left:45%;    
+}

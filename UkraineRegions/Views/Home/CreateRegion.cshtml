@@ -1,35 +1,33 @@
-﻿<div class="CreateRegion" ng-form name="myForm">
+﻿<div class="CreateRegion" ng-form name="CreateRegionForm">
  <table>
         <tr>
            <td>City:</td>
            <td><input ng-model="region.City" name="city" required></td>
-           <td><span style="color:red" ng-show="myForm.city.$dirty && myForm.city.$invalid"></td>
-           <td> <span ng-show="myForm.city.$error.required"> required.</span></td>  
+           <td><span ng-show="CreateRegionForm.city.$dirty && CreateRegionForm.city.$invalid"></td>
+           <td><span style="color:red" ng-show="CreateRegionForm.city.$error.required"> required.</span></td>  
         </tr>
  
         <tr>
             <td>RegionalCenter:</td>
             <td><input ng-model="region.RegionalCenter" name="regionalCenter" required></td>
-            <td><span style="color:red" ng-show="myForm.regionalCenter.$dirty && myForm.regionalCenter.$invalid"> </td>
-            <td> <span ng-show="myForm.regionalCenter.$error.required"> required.</span> </td>           
+            <td><span ng-show="CreateRegionForm.regionalCenter.$dirty && CreateRegionForm.regionalCenter.$invalid"> </td>
+            <td><span style="color:red" ng-show="CreateRegionForm.regionalCenter.$error.required"> required.</span> </td>           
         </tr>
         <tr>
            <td>Population:</td>
            <td><input ng-model="region.Population" name="population" required></td>
-           <td><span style="color:red" ng-show="myForm.population.$dirty && myForm.population.$invalid"></td> 
-           <td>  <span ng-show="myForm.population.$error.required"> required.</span></td>                      
+           <td><span ng-show="CreateRegionForm.population.$dirty && CreateRegionForm.population.$invalid"></td> 
+           <td><span style="color:red" ng-show="CreateRegionForm.population.$error.required"> required.</span></td>                      
         </tr>
         <tr>
            <td>Production:</td>
            <td><input ng-model="region.Production" name="production" required></td>
-           <td><span style="color:red" ng-show="myForm.production.$dirty && myForm.production.$invalid"></td>
-           <td><span ng-show="myForm.production.$error.required"> required.</span></td>                     
+           <td><span ng-show="CreateRegionForm.production.$dirty && CreateRegionForm.production.$invalid"></td>
+           <td><span style="color:red" ng-show="CreateRegionForm.production.$error.required"> required.</span></td>                     
         </tr>
-
         <tr>
             <td><input type="submit" data-ng-click="SaveNewRegion()" name="Save"  value="Save"
-          ng-disabled="!myForm.$valid" /></td>
-
+          ng-disabled="!CreateRegionForm.$valid" /></td>
         </tr>
     </table>   
 </div>
