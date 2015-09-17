@@ -5,7 +5,7 @@ function (Region, $q) {
         Region.query({ Method: 'RetriveRegionsData' }, function (regions) {
             delay.resolve(regions);
         }, function () {
-            delay.reject('Unable to fetch recipes');
+            delay.reject('Unable to fetch regions');
         });
         return delay.promise;
     };
@@ -19,7 +19,7 @@ function (Region, $route, $q) {
         Region.get({ Method: 'GetRegionData', ID: $route.current.params.id }, function (Region) {
             delay.resolve(Region);
         }, function () {
-            delay.reject('Unable to fetch recipe ' + $route.current.params.id);
+            delay.reject('Unable to fetch regions ' + $route.current.params.id);
         });
         return delay.promise;
     };
@@ -33,7 +33,7 @@ function (Region, $route, $q) {
         Region.delete({ Method: 'DeleteRegionData', ID: $route.current.params.id }, function (Region) {
             delay.resolve(Region);
         }, function () {
-            delay.reject('Unable to fetch recipe ' + $route.current.params.id);
+            delay.reject('Unable to fetch regions ' + $route.current.params.id);
         });
         return delay.promise;
     };
