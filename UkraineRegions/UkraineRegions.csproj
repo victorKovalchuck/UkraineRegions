@@ -124,6 +124,7 @@
     <Content Include="css\jasmine.css" />
     <Content Include="css\TableDecoration.css" />
     <Content Include="Global.asax" />
+    <Content Include="Gruntfile.js" />
     <Content Include="karma.conf.js" />
     <Content Include="RegionScriptsTest\RegionsAngularTest.js" />
     <Content Include="RegionScripts\Controllers.js" />
@@ -927,6 +928,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Data\Region.csv" />
+    <None Include="package.json" />
     <None Include="Scripts\angular-animate.min.js.map" />
     <None Include="Scripts\angular-aria.min.js.map" />
     <None Include="Scripts\angular-cookies.min.js.map" />
